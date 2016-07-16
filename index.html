@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>05.07</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico|Oleo+Script|Coming+Soon|Shadows+Into+Light+Two&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+	body{
+  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png);
+}
+
+*{
+	/*border:1px solid red;*/
+}
+
+
+	.nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 5px;
+
+	}
+	.travel{
+		align-self: center;
+		flex-grow: 20;
+		font-family: 'Oleo Script', cursive;
+		color:		#B8860B;
+		font-size: 55px;
+		text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+	}
+
+	.travel:hover{
+		text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+		}
+
+	.logo{
+		flex-grow: 1;
+		margin: 5px 20px;
+		align-items: center;
+	}
+
+    .logo img{
+    	width: 120px;
+    	opacity: 0.8;
+    	text-align: center;
+    }
+    .logo img:hover{
+		transform: scale(1.02);
+		transition: 0.s;
+		cursor: pointer;
+    }
+
+    .social img{
+    	width: 50px;
+    	opacity: 0.8;
+    }
+
+    .social img:hover{
+		transform: scale(1.1);
+		transition: 0.2s;
+		cursor: pointer;
+		    }
+
+	.social{
+		align-self: center;
+		padding: 5px;
+		margin-right: 11px; 
+		padding: 0px;
+	}
+
+	.content{
+		display: flex;
+	}
+
+	.menu{
+
+   	width: 35%;
+   	margin-left:-45px;
+	}
+	.menu-icons{
+		display: none;		
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.menu-icons img{
+width: 50px;
+	}
+	.menu-icons img:hover{
+		transform: scale(1.1);
+		transition: 0.2s;
+		cursor: pointer;
+		    }
+
+	.menu-icons ul{
+		display: flex;
+   	list-style: none;
+   	flex-direction: row;
+   	justify-content: center;
+   	/*margin-left: -20px;*/
+
+     }
+  .menu-icons li{
+  	padding: 10px;
+     margin: 5px;
+     }
+
+     .menu ul{
+   	list-style: none;
+   	display: flex;
+   	flex-direction: column;
+
+     }
+
+     .menu li{
+     	padding: 15px;
+     	margin: 5px;
+     	text-align: center;
+     	background-color: rgba(0,0,0,0.3);
+     	font-family: 'Coming Soon', cursive;
+     	text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
+     	font-size: 23px;
+
+     }
+     .menu li:hover{
+     	background-color: rgba(0,0,0,0.4);
+     	text-shadow: 2px 3px 3px rgba(255,255,255,0.8);
+     }
+
+     .right{
+     	display: flex;
+     	flex-direction: row;
+     	align-items: flex-start;
+     	justify-content: center;
+     	flex-wrap: wrap;
+     	width: 70%;
+     	margin-top: 15px;
+     }
+
+.right img{
+	width: 280px;
+	margin: 5px;
+	justify-content: center;
+    /*border-width: 3px 3px 80px 3px;
+    border-color: white;
+    border-style: solid;*/ 
+    border: 5px solid #fff;
+  border-bottom: 60px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+	  }
+
+footer{
+	display: none;
+}
+
+
+@media screen and (max-width: 1000px){
+.right img{
+	width: 45%;
+}
+}
+
+@media screen and (max-width: 800px){
+.travel{
+	display: none;
+}
+}
+@media screen and (max-width: 600px){
+ul{
+   	flex-direction: row;
+}
+.content{
+		flex-wrap: wrap;
+		/*justify-content: space-around;*/
+	}
+	.menu{
+		display: none;
+	}
+	.menu-icons{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+		justify-content: center;
+		margin-left: 17px;
+	}
+	.menu-icons ul{
+		display: flex;
+   	list-style: none;
+   	flex-direction: row;
+   	flex-wrap: wrap;
+   	justify-content: center;
+   }
+   .social{
+   	display: none;
+   }
+.travel{
+	display: flex;
+	margin-left: 15px;
+}
+.right img{
+	width: 100%;
+	margin-left: 150px;
+}
+} 
+@media screen and (max-width: 599px){
+footer{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+.footer-social{
+   	display:flex;
+   }
+
+   .footer-social img{
+    	width: 50px;
+    	opacity: 0.8;
+    }
+	.footer-social{
+		align-self: center;
+		padding: 5px;
+		margin: 11px; 
+		padding: 0px;
+	}
+	.footer-social img:hover{
+		transform: scale(1.1);
+		transition: 0.2s;
+		cursor: pointer;
+		    }
+}
+
+@media screen and (max-width: 535px){
+	.travel{
+		margin-left: 95px; 
+}
+	.logo {
+	display: none;
+	}
+
+
+</style>
+</head>
+<body>
+
+<div class="nav">
+	<div class="logo"><img src="http://image.flaticon.com/icons/svg/149/149061.svg"></div>
+	<div class="travel">Travel together</div>
+	<div class="social"><img src="http://image.flaticon.com/icons/svg/69/69407.svg"></div>
+	<div class="social"><img src="http://image.flaticon.com/icons/svg/69/69480.svg"></div>
+	<div class="social"><img src="http://image.flaticon.com/icons/svg/69/69444.svg"></div>
+	<div class="social"><img src="http://image.flaticon.com/icons/svg/69/69366.svg"></div>
+
+</div>
+<div class="content">
+	<div class="menu">
+		<ul>
+			<li>Who we are?</li>
+			<li>Gallery</li>
+			<li>Our trip</li>
+			<li>Join US</li>
+			<li>Contact Us</li>
+		</ul>
+	</div>
+
+	<div class="menu-icons">
+		<ul>
+			<li><img src="http://image.flaticon.com/icons/svg/149/149150.svg"></li>
+			<li><img src="http://image.flaticon.com/icons/svg/149/149098.svg"></li>
+			<li><img src="http://image.flaticon.com/icons/svg/149/149446.svg"></li>
+			<li><img src="http://image.flaticon.com/icons/svg/149/149447.svg"></li>
+			<li><img src="http://image.flaticon.com/icons/svg/149/149384.svg"></li>
+		</ul>
+	</div>
+	<div class="right">
+		<img src="http://67.media.tumblr.com/5be1f6bd3309adc098574c83ba03e905/tumblr_ngsl2nzGmW1sulnzno1_500.jpg">
+		<img src="http://static.tumblr.com/7d96aa89a538043f57ce09d8a6ae0533/xkrthqj/w3Qmhgaxf/tumblr_static_city.jpg">
+		<img src="http://www.imagefully.com/wp-content/uploads/2015/09/Fault-In-Our-Stars-Quotes-Tumblr-City-Light-Photo.jpg">
+		<img src="https://secure.static.tumblr.com/1d4f309a0b691dbfa961916c7c2e7372/f6t6hzy/wamnop9kt/tumblr_static_tumblr_static_3fmtk61wkrc4ccss4cgg4k0kc_640.jpg">
+	</div>
+</div>
+<footer>
+	<div class="footer-social"><img src="http://image.flaticon.com/icons/svg/69/69407.svg"></div>
+	<div class="footer-social"><img src="http://image.flaticon.com/icons/svg/69/69480.svg"></div>
+	<div class="footer-social"><img src="http://image.flaticon.com/icons/svg/69/69444.svg"></div>
+	<div class="footer-social"><img src="http://image.flaticon.com/icons/svg/69/69366.svg"></div>
+</footer>
+</body>
+</html>
